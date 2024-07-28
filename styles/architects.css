@@ -27,7 +27,6 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 .btn-primary{
-    border: 1px solid black;
     border-style: none;
     border-radius: 8px;
     background-color: #FF900E;
@@ -213,14 +212,13 @@ main{
 
  /* image button */
  #experience-badge{
-    border: 1px;
     border-style: none;
     border-radius: 8px;
     background-color: #FF900E;
-    /* width: 340px;
-    height: 200px; */
-    text-align: center;
+    color: #FFFFFF;
     padding: 45px 42px;
+    margin-left: -92px;
+    margin-top: -77px;
  }
  #experience-year{
     font-size: 4rem;
@@ -232,6 +230,9 @@ main{
     font-weight: 500;
     color: #FFFFFF;
  }
+ .featured-architect-pic img{
+    width: 100%;
+ }
  /* sponsor styles */
  .sponsor-info{
     max-width: 540px;
@@ -241,11 +242,25 @@ main{
 .sponsor-companies{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 130px;
 }
 .sponsor-companies img{
     filter: grayscale(100%);
 }
 
+.hide{
+    display: none;
+}
+.footer-bg{
+    background-color: #FFF4E7;
+}
+footer{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    text-align: center;
+}
 /* responsive for small device layout */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links{
@@ -263,6 +278,13 @@ main{
     .our-features{
         margin-left: 20px;
     }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 65px;  
+    }
     .section-title-facts{
         margin-left: 25px;
     }
@@ -278,7 +300,9 @@ main{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         justify-items: center;
+        margin-bottom: 30px;
     }
+    
 }
 
 /* responsive for medium device layout */
@@ -291,6 +315,13 @@ main{
     }
     .section-title-facts{
         margin-left: 50px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: -80px;
+        margin-left: 50px;  
     }
     .fact-description{
         margin-left: 50px;
