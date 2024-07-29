@@ -129,10 +129,6 @@ main{
 }
 
 /* some facts styles */
-/* .section-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-} */
  
 .fact-description{
     max-width: 540px;
@@ -154,10 +150,6 @@ main{
     align-items: center;
     text-align: center;
  }
- /* .icons{
-    margin-top: 45px;
-    margin-bottom: 10px;
- } */
  .facts-number{
     font-size: 2.8rem;
     font-weight: 600;
@@ -187,7 +179,6 @@ main{
  .section-subtitle-description{
     font-size: 1rem;
     font-weight: 400;
-    /* padding-top: 10px; */
     padding-bottom: 30px;
  }
  .features-details{
